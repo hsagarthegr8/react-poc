@@ -14,9 +14,9 @@ const styles = createStyles({
 });
 
 class Login extends Component {
-  handleSubmit = ({ username, password }) => {
+  handleSubmit = (values) => {
     const { login } = this.props;
-    login(username, password);
+    login(values);
   };
 
   render() {

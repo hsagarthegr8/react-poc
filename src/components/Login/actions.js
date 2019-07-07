@@ -1,11 +1,11 @@
 export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
 export const LOGOUT = "LOGOUT";
 
-export const login = (username, password) => {
+export const login = (user) => {
   return {
     type: LOGIN_SUCCESS,
     payload: {
-      username,
+      username: user.username,
       token: "THIS_IS_A_FAKE_TOKEN",
       isLoggedIn: true
     }
