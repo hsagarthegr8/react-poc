@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Component it should match Snapshot 1`] = `
+<Home>
+  <div>
+    Home
+  </div>
+</Home>
+`;

@@ -22,7 +22,7 @@ const styles = createStyles({
   }
 });
 
-class Topbar extends Component {
+export class Topbar extends Component {
   render() {
     const { classes, isLoggedIn, logout } = this.props;
     return (
@@ -56,11 +56,9 @@ class Topbar extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  return {
-    isLoggedIn: state.auth.isLoggedIn
-  };
-};
+const mapStateToProps = state => ({
+  isLoggedIn: state.auth.isLoggedIn
+})
 
 export default connect(
   mapStateToProps,

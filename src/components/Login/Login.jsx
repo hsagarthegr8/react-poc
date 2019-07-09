@@ -7,13 +7,13 @@ import { GenericForm } from "../GenericForm";
 import { loginForm } from "../../forms";
 import { login } from "./actions";
 
-const styles = createStyles({
+export const styles = createStyles({
   paper: {
     padding: "2em"
   }
 });
 
-class Login extends Component {
+export class Login extends Component {
   handleSubmit = (values) => {
     const { login } = this.props;
     login(values);
@@ -21,7 +21,6 @@ class Login extends Component {
 
   render() {
     const { classes, isLoggedIn } = this.props;
-    console.log(isLoggedIn);
     if (isLoggedIn) {
       return <Redirect to="/profile" />;
     }

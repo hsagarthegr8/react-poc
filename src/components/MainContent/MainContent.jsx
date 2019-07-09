@@ -5,7 +5,7 @@ import Profile from "../Profile/Profile";
 import Home from "../Home/Home";
 import { Grid } from "@material-ui/core";
 
-class MainContent extends Component {
+export class MainContent extends Component {
   render() {
     return (
       <Grid
